@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="claculator">
+        <h3>calc</h3> 
+        <div class="display">
+          <input type="text" placeholder="0" readonly id= "outputDisplay" />
+        </div>
+        <div class="inputField">
+          <div class="filed1 fields">
+            <button onclick="display_7()">7</button>
+            <button onclick="display_8()">8</button>
+            <button onclick="display_9()">9</button>
+            <button class="delbtn" onclick="display_del()">DEL</button>
+          </div>
+          <div class="filed2 fields">
+            <button onclick="display_4()">4</button>
+            <button onclick="display_5()">5</button>
+            <button onclick="display_6()">6</button>
+            <button class="operator" onclick="display_plus()">+</button>
+          </div>
+          <div class="field3 fields">
+            <button onclick="display_1()">1</button>
+            <button onclick="display_2()">2</button>
+            <button onclick="display_3()">3</button>
+            <button class="operator" onclick="display_minus()">-</button>
+          </div>
+          <div class="field4 fields">
+            <button onclick="display_dot()">.</button>
+            <button onclick="display_0()">0</button>
+            <button class="operator" onclick="display_divide()">/</button>
+            <button class="operator" onclick="display_multiple()">x</button>
+          </div>
+          <div class="field5 fields">
+            <button class="resetbtn" onclick="display_reset()">RESET</button>
+            <button class="eqlbtn" onclick="display_solution()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
